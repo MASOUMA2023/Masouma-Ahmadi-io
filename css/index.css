@@ -1,0 +1,59 @@
+body {
+    background-color: aqua;
+    color: rgb(5, 37, 200);
+    font:caption;
+    padding: 2em;
+}
+
+p {
+   color:rgb(13, 7, 7);
+   padding: 10px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2em;
+  
+    color: rgb(30, 50, 149);
+}
+
+#experience {
+         list-style-type: square;
+         padding: 5px 50px;
+         border-color: darkcyan ;
+         border-width: 0.5em;
+         border-style:inset;
+}
+
+
+#name {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 2em;
+      font-style:italic;
+}  
+
+#portfilo-picture {
+        border-radius: 50%;
+        margin: 2em;
+        width: 25vw;
+        border-color: rgb(69, 120, 150);
+        border-width: 1.2dvi;
+        border-style: dashed;
+}
+
+#navigation {
+   position:fixed;
+   top: 0;
+   background-color: aqua;
+}
+
+#navigation ul {
+    display: flex;
+    gap: 2.6em;
+    padding-bottom: 0;
+}
+
+#connect li {
+      list-style:upper-alpha;
+}
+
