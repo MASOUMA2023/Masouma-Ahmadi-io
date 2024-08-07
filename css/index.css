@@ -2,7 +2,6 @@ body {
     background-color: aqua;
     color: rgb(5, 37, 200);
     font:caption;
-    padding: 2em;
 }
 
 p {
@@ -13,16 +12,31 @@ p {
 h2 {
     font-weight: bold;
     font-size: 2em;
-  
     color: rgb(30, 50, 149);
 }
 
 #experience {
-         list-style-type: square;
          padding: 5px 50px;
          border-color: darkcyan ;
          border-width: 0.5em;
          border-style:inset;
+}
+
+.jobs {
+     display: flex;
+     flex-direction: row;
+     justify-content:space-evenly;
+     list-style: none;
+     column-width:;
+}
+
+.job1, .job2, .job3 {
+     background-color: rgb(190, 246, 246);
+     margin: 0.5em;
+   
+}
+.jobs h3 {
+   margin: 5px 30px
 }
 
 
@@ -30,30 +44,45 @@ h2 {
       font-family: Georgia, 'Times New Roman', Times, serif;
       font-size: 2em;
       font-style:italic;
+      margin-top: 5em;
+      text-align: center    ;
 }  
 
 #portfilo-picture {
         border-radius: 50%;
-        margin: 2em;
-        width: 25vw;
+        width: 200px;
+        margin: 10px auto;
         border-color: rgb(69, 120, 150);
-        border-width: 1.2dvi;
+        border-width: 1dvi;
         border-style: dashed;
 }
 
 #navigation {
    position:fixed;
    top: 0;
-   background-color: aqua;
+   background-color: rgb(121, 244, 21);
+   width: 100%;
+   opacity: 100%;
 }
 
 #navigation ul {
     display: flex;
+    justify-content: center;
     gap: 2.6em;
     padding-bottom: 0;
+    list-style: none;
 }
 
-#connect li {
-      list-style:upper-alpha;
+
+#about, #experience, #skills, #projects, #connect {
+    scroll-margin-top: 4em;
+}
+
+.connect-list {
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    gap: 3em;
+    padding-left: 10px;
 }
 
