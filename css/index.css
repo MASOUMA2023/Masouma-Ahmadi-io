@@ -104,6 +104,19 @@ min-width:min-content;
     max-width: 40%;
     max-height: 60%;
 }
+.message_item {
+    margin-bottom: 10px;
+}
+.edit-button, .remove-button {
+    margin-left: 5px;
+}
+#leave_message {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
 
 
 @media only screen and (max-width: 380px) {
@@ -120,12 +133,20 @@ min-width:min-content;
     .exp-container {
         grid-template-columns:  1fr;
     }
+    #leave_message {
+        display:flex;
+        flex-direction: column;
+    }
 }
+
 @media only screen and (min-width: 410px) {
     .exp-container {
         grid-template-columns: 1fr 1fr;
 }
-
+#leave_message {
+   
+    flex-wrap: wrap;
+}
 @media only screen and (min-width: 900px) {
    
     .exp-container {
