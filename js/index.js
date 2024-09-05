@@ -80,3 +80,31 @@ function makeRemoveButton() {
     return button;
 } 
     
+const userName = "MASOUMA2023";
+fetch(`https://api.github.com/users/${userName}/repos`)
+  .then((response) => {
+    if (response.ok) {
+      return response.json();
+    } else {
+      throw new Error("failed to fetch data!");
+    }
+  })
+  .then((data) => {
+    const repositories = data;
+    console.log(repositories);
+
+    const projectSection = document.getElementById("projects");
+    const projectList = document.createElement("ul");
+    projectSection.appendChild(projectList);
+
+    for (let repository of repositories) {
+      let project = document.createElement("li");
+      project.innerHTML = repository.name;
+      projectList.appendChild(project);
+    }
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });
+    
+        
