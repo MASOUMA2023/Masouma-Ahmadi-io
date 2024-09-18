@@ -92,6 +92,11 @@ margin-right: 1.5rem;
 min-width:min-content;
 }
 
+.skills{
+    display:flex;
+    justify-content: left;
+}
+
 .connect-list {
     display: flex;
     justify-content:left;
