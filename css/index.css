@@ -1,5 +1,5 @@
 body {
-    background-color: aqua;
+    background-color: rgb(116, 249, 249);
     color: rgb(5, 37, 200);
     font:caption;
 }
@@ -18,7 +18,7 @@ h2 {
 #navigation {
     position:fixed;
     top: 0;
-    background-color: rgb(121, 244, 21);
+    background-color: rgb(53, 250, 178);
     font-size: 1rem;
     width: 100%;
     opacity: 100%;
@@ -54,8 +54,12 @@ h2 {
 }
 
 
-#about, #experience, #skills, #projects, #connect {
+#about, #experience, #skills, #projects, #connect, #leave_message {
     scroll-margin-top: 7em;
+  
+}
+#leave_message, .connect-list,.message, .project-container, .skill,.about-container {
+    background-color: rgba(209, 217, 218, 0.701);
 }
 
 #experience {
@@ -78,8 +82,11 @@ gap: 10px;
 display:flex;
 flex-direction: row;
 background-color: rgb(190, 246, 246);
-margin: 0.5em;
+margin : 0.5em;
 
+}
+.date {
+    margin-left: 0.8em;
 }
 
 .job {
@@ -92,11 +99,17 @@ margin-right: 1.5rem;
 min-width:min-content;
 }
 
+.skills{
+    display:flex;
+    justify-content: left;
+}
+
 .connect-list {
     display: flex;
     justify-content:left;
     gap: 1rem;
     padding-left: 10px;
+    height: 10%;
 }
 #logo {
     width: 40%;
@@ -115,16 +128,20 @@ min-width:min-content;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+  
 
 }
 
 
 @media only screen and (max-width: 380px) {
     #navigation {
-        background-color:rgb(205, 248, 31);
+        background-color:rgb(119, 247, 156);
         font: size 1.5em; ;
     }
-
+    
+    body {
+        background-color: rgb(149, 198, 251);
+    }
     #name {
         font-style: normal;
         font-size: 2em;
